@@ -1,3 +1,7 @@
+/*
+    https://spline.design/
+*/
+
 body {
     background: rgb(29, 40, 41);
     background: -moz-linear-gradient(90deg, rgba(29,40,41,1)0%, rgba(24,30,31,1)11%, rgba(19,19,20,1)41%, rgba(19,19,20,1)58%, rgba(24,30,31,1)85%, rgba(29,40,41,1)100%);
@@ -68,6 +72,18 @@ main h1 {
     background-clip: text;
 }
 
+main h2 {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 1;
+    background-image: linear-gradient(rgb(133,133,133),rgb(255,255,255));
+    color: transparent;
+    background-clip: text;
+    display: none;
+}
+
 .location {
     margin-top: 2rem;
     display: flex;
@@ -106,8 +122,95 @@ main h1 {
     box-shadow: 0 0 10px rgba(255,255,255, 0.5);
 }
 
+.scroll-dow:before,
+.scroll-dow:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10%;
+    width: 10%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid lightgray;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-dow 3s ease-in-out infinite;
+}
 
+.scroll-dow::before {
+    top: 30%;
+    animation-delay: 0.8s;
+}
 
+@keyframes scroll-dow {
+    0% {
+        opacity: 0;
+    }
+    30%,60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0%;
+        top: 90%;
+    }
+}
+
+.planet-3D {
+    position: absolute;
+    top: -20%;
+    right: -14%;
+    width: 130%;
+    height: 130%;
+}
+
+@media (max-width: 1400px){
+    main h1 {
+        font-size: 6.3rem;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 768px){
+    main h1 {
+        display: none;
+    }
+
+    main h2 {
+        display: block;
+        margin-top: -3rem;
+    }
+
+    .bio-section {
+        margin-bottom: 1rem;
+    }
+
+    .bio {
+        font-size: 0.8rem;
+        max-width: 15rem;
+    }
+
+    .location p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px){
+    body {
+        padding: 1rem;
+    }
+
+    main h2 {
+        font-size: 6rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+    .contact-btn{
+        padding: 0.4rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
 
 
 
