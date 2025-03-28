@@ -1,0 +1,6 @@
+Tailwind CSS v4 Full Course 2025 | Master Tailwind in One Hour
+-> Link: https://www.youtube.com/watch?v=6biMWgD6_JY&t=159s
+
+Tailwind projects:
+-Tailwind CSS: Build and Deploy a Fully Responsive Plant Website
+--> Link: https://www.youtube.com/watch?v=zKguO4oaAGs
